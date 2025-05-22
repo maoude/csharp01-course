@@ -1,5 +1,5 @@
 // src/data/chapters.ts
-import { BookOpen, FileCode, Video, Puzzle, NotebookText, Presentation as SlidesIcon } from 'lucide-react'; // Using Presentation for Slides
+import { BookOpen, FileCode, Puzzle } from 'lucide-react'; // Using Presentation for Slides
 
 export interface ChapterMetadata {
   id: string; // e.g., "chapter1", "chapter2"

@@ -5,7 +5,7 @@ import CourseIntro from './components/CourseIntro'; // For the main landing page
 // import MainContent from './components/MainContent'; // MainContent is no longer used directly by App.tsx for chapter content
 
 import { Sun, Moon } from 'lucide-react'; // For dark mode toggle
-import { chapters as chapterDataList } from './data/chapters'; // To get initial chapter ID
+//  import { chapters as chapterDataList } from './data/chapters'; // To get initial chapter ID
 
 // --- Placeholder Chapter Components ---
 // Replace these with actual imports from './chapters/ChapterX' when created
