@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Example global styles (optional) */
+body {
+  font-family: 'Inter', sans-serif; /* Assuming Inter is loaded or a fallback is acceptable */
+  font-size: 1rem; /* Default font size (equivalent to Tailwind's text-base, typically 16px) */
+  line-height: 1.6; /* Default line height for better readability */
+  color: #374151; /* Default text color (Tailwind gray-700) */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark body {
+  color: #d1d5db; /* Default text color for dark mode (Tailwind gray-300) */
+}
+
+/* For custom scrollbars if desired */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light mode track */
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #374151; /* Dark mode track (gray-700) */
+}
+::-webkit-scrollbar-thumb {
+  background: #888; /* Light mode thumb */
+  border-radius: 10px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #6b7280; /* Dark mode thumb (gray-500) */
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Light mode thumb hover */
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: #4b5563; /* Dark mode thumb hover (gray-600) */
+}
+
+/* Basic styles for prose class if you don't want to install @tailwindcss/typography yet */
+/* These .prose styles provide defaults. For more control, consider @tailwindcss/typography */
+.prose {
+  max-width: 65ch;
+  color: inherit; /* Inherit color from body */
+}
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+  color: #111827; /* Darker text for headings (Tailwind gray-900) */
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+.dark .prose h1, .dark .prose h2, .dark .prose h3, .dark .prose h4, .dark .prose h5, .dark .prose h6 {
+  color: #f3f4f6; /* Lighter text for headings in dark mode (Tailwind gray-100) */
+}
+.prose p {
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
+}
+.prose a {
+  color: #4f46e5; /* indigo-600 */
+  text-decoration: none;
+  font-weight: 500; /* Slightly bolder links */
+}
+.prose a:hover {
+  text-decoration: underline;
+}
+.dark .prose a {
+  color: #818cf8; /* indigo-400 */
+}
+
+/* Ensure aspect ratio plugin works if you're not using @tailwindcss/aspect-ratio */
+.aspect-w-16 {
+  position: relative;
+  padding-bottom: calc(9 / 16 * 100%); /* 16:9 Aspect Ratio */
+}
+.aspect-w-16 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.aspect-h-9 {
+  /* This class is typically used with aspect-w-* */
+}
+
